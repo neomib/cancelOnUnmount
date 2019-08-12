@@ -1,4 +1,4 @@
-# cancelonunmount
+# [cancelonunmount](https://www.npmjs.com/package/cancelonunmount)
 
 ###### A Reac HOC and HOOK to manage Promise cancellation when the component unmounts.
 
