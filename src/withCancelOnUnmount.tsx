@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 export interface WithCancelOnUnmountProps {
-    cancelablePromise(promise: Promise<any>): Promise<any>;
+    cancelablePromise<T>(promise: Promise<T>): Promise<T>;
     getIsCanceled(): boolean;
 }
 
