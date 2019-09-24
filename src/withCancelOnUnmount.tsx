@@ -6,7 +6,7 @@ export interface WithCancelOnUnmountProps {
 }
 
 export const withCancelOnUnmount = <P extends object>(Component: React.ComponentType<P>) =>
-    class WithCancelOnUnmount extends React.Component<P & WithCancelOnUnmountProps> {
+    class WithCancelOnUnmount extends React.Component<Omit<P, keyof WithCancelOnUnmountProps>> {
         private isCanceled = false;
         private cancelablePromise = (promise: Promise<any>) => new Promise((resolve, reject) => {
             promise
